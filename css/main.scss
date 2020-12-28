@@ -1,0 +1,406 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
+
+body {
+  height: 100vh;
+  margin: 0;
+  font-family: 'Poppins', arial;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.nav-container {
+  background: #6C63FF;
+
+  a {
+    color: white;
+  }
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 2em;
+
+  .logo {
+    color: #FF6584;
+    font-weight: bold;
+  }
+    
+  ul {
+    display: flex;
+
+    a {
+      display: block;
+      padding: 0 1em;
+    }
+  }
+}
+
+.hero {
+  color: #6C63FF;
+  display: grid;
+  text-align: center;
+  padding: 4em;
+
+  .content {
+    h1 {
+      animation-name: droppingh1;
+      animation-duration: 3s;
+      animation-timing-function: ease-in-out;
+    }
+    p {
+      font-style: italic;
+      animation-name: droppingp;
+      animation-duration: 6s;
+      animation-timing-function: ease-in-out;
+    }
+    
+  }
+
+  .hero-image {
+    margin-top: 1em;
+  }
+
+  p {
+    color: #FF6584;
+  }
+}
+
+.meet {
+  margin-top: 1em;
+  display: flex;
+  justify-content: space-evenly;
+  margin: 0 auto;
+  width: 200px;
+  font-weight: bold;
+
+  a {
+    margin-top: .4em;
+    margin-bottom: .5em;
+    padding: .2em .4em;
+    background-color: #6C63FF;
+    font-weight: 500;
+    border: none;
+    border-radius: 5px;
+    color: white;
+  }
+}
+
+.scroll {
+  width: 30px;
+  margin-top: 2em;
+}
+
+section {
+  padding: 4em 2em;
+  text-align: center;
+}
+
+.featured {
+  position: relative;
+}
+.featured::before {
+  content: "";
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background-color: #fcc6c67a;
+  top: 0;
+  left: -5%;
+  z-index: -1;
+}
+
+.subtitle {
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #FF6584;
+  letter-spacing: .2em;
+  font-size: .85em;
+}
+
+.featured-title {
+  color: black;
+  font-weight: bold;
+  font-size: 1.3em;
+  margin-top: -.4em;
+  display: block;
+}
+
+.featured-desc {
+  color: #252525;
+  margin-bottom: 3em;
+  font-size: .9em;
+  line-height: 1.8em;
+  font-weight: 500;
+}
+
+.skills {
+  background: #ff6584c0;
+}
+
+.skills-container ul li{
+
+  background: white;
+  padding: 2em;
+  border-radius: 1em;
+  margin-bottom: 1em;
+  .icon-container {
+    height: 100px;
+    display: grid;
+    place-content: center;
+    margin: 0 auto;
+
+    img {
+      width: 100px;
+    }
+  }
+
+  &.one {
+    width: 100px;
+  }
+  &.two {
+    width: 100px;
+  }
+  &.three {
+    width: 60px;
+  }
+} 
+
+.skills-container {
+  .transition2 {
+    box-shadow: rgba(0, 0, 0, 0.15) .5em .5em .2em;
+  }
+}
+
+.skill-title {
+  font-weight: bold;
+  color: #FF6584;
+}
+.featured-desc {
+  margin-bottom: 2em;
+}
+
+.portfolio {
+  background: #f7f7f7;
+}
+
+.portfolio-container a img {
+  border-radius: 1em;
+  margin-bottom: 2em;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px .5em .2em;
+}
+
+.contact {
+  padding-top: 0;
+  margin-top: 2em;
+  display: block;
+  .contact-header {
+    p {
+      font-style: italic;
+      font-size: small;
+      margin-bottom: -1em;
+    }
+  }
+  .contact-container {
+    .contact-info {
+      
+      div {
+        display: flex;
+        justify-content: center;
+        i {
+          margin-right: 1em;
+        }
+      }
+    }
+    .contact-image {
+      display: none;
+    }
+  }
+}
+
+.footer-container {
+  footer {
+    ul {
+      background-color: #6C63FF;
+      list-style: none;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1em 2em;
+
+      li a {
+        color: white;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .contact {
+    .contact-container {
+      .contact-image {
+        display: block;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 800px) {
+  .featured, .portfolio {
+    text-align: left;
+  }
+  .featured, .portfolio-container {
+    display: grid;
+    grid-template-columns: 40% auto;
+  }
+  .left, .portfolio-left {
+    display: grid;
+    place-content: center;
+  }
+
+  .right {
+    margin-left: 2em;
+    margin-top: 1em;
+  }
+
+  .skills {
+    margin-top: -5em;
+    margin-bottom: -7em;
+    padding-top: 7em;
+  }
+
+  .skills-container ul {
+    display: grid;
+    grid-template-columns: repeat(3,auto);
+    grid-gap: 1em;
+  }
+
+  .portfolio {
+    padding-top: 7em;
+  }
+  .portfolio-container img {
+    margin-left: 2em;
+  }
+  .contact {
+    .contact-header {
+      margin-bottom: 2em;
+    }
+    .contact-container {
+      margin-top: 1em;
+      display: grid;
+      grid-template-columns: 40% 60%;
+
+      .contact-info {
+        div {
+          justify-content: left;}
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 1050px) {
+  .hero {
+    height: 90vh;
+  }
+  .nav-container {
+    display: grid;
+    background: unset;
+
+    header {
+      background-color: #6C63FF;
+    }
+  }
+  header {
+    padding: 2em 2em 2em 4em;
+  }
+  section {
+    padding: 4em;
+  }
+
+  .hero {
+    display: flex;
+    align-items: center;
+    background: unset;
+    padding: 0;
+
+    .content {
+      padding: 6em 8em 6em 4em;
+      text-align: left;
+
+      h1 {
+        font-size: 3em;
+        line-height: 1.2em;
+      }
+    }
+  }
+  .meet {
+    margin: unset;
+  }
+  .hero-design {
+    display: unset;
+    margin-left: -50%;
+    margin-top: 10%;
+    width: 100%;
+  }
+
+  .portfolio img {
+    float: right;
+    max-width: 500px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  header {
+    padding: 2em 10em 2em 10em;
+  }
+  section {
+    padding: 10em 10em 4em 10em;
+  }
+  .hero .content {
+    padding: 6em 8em 6em 10em;
+  }
+  .hero-image {
+    padding-top: 6em;
+    margin-right: 4em;
+  }
+  
+}
+
+@media only screen and (min-width: 1550px) {
+  header {
+    padding: 2em 20em 2em 20em;
+  }
+  section {
+    padding: 20em 20em 4em 20em;
+  }
+  .hero .content {
+    padding: 9em 20em 6em 20em;
+  }
+  .hero-image {
+    padding-top: 9em;
+    margin-right: 8em;
+  }
+}
+
+@keyframes droppingh1 {
+  from {color: white;}
+  to {color: #6C63FF;}
+}
+@keyframes droppingp {
+  from {color: white;}
+  to {color: #FF6584;}
+}
