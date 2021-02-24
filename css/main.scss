@@ -4,6 +4,70 @@ body {
   height: 100vh;
   margin: 0;
   font-family: 'Poppins', arial;
+
+  #myBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: #FF6584; /* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 20px; /* Rounded corners */
+    font-size: 18px; /* Increase font size */
+    box-shadow: rgba(0, 0, 0, 0.15) 3px 3px 2px;
+  }
+  
+  #myBtn:hover {
+    background-color: #6C63FF; /* Add a dark-grey background on hover */
+  }
+
+  .parallax {
+    /* The image used */
+    background-image: url("../images/blog-bg.jpg");
+  
+    /* Set a specific height */
+    min-height: 500px; 
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  .result {
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .post-div {
+    padding: 1rem;
+    border-radius: 5px;
+    margin: 1rem;
+  }
+  
+  .post-h2 {
+    font-size: 1.5rem;
+    margin-bottom: .1rem;
+  }
+  
+  .post-h3, .post-h32 {
+    font-size: 1.1rem;
+    font-weight: 200;
+    margin-bottom: .1rem;
+  }
+  
+  .post-p1 {
+    margin-top: 1rem;
+    font-size: 1rem;
+    font-weight: lighter;
+  }
 }
 
 ul {
@@ -238,7 +302,7 @@ section {
       background-color: #6C63FF;
       list-style: none;
       display: flex;
-      justify-content: space-between;
+      justify-content: space-evenly;
       align-items: center;
       padding: 1em 2em;
 

@@ -5,6 +5,88 @@ body {
   font-family: 'Poppins', arial;
 }
 
+body #myBtn {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Fixed/sticky position */
+  bottom: 20px;
+  /* Place the button at the bottom of the page */
+  right: 30px;
+  /* Place the button 30px from the right */
+  z-index: 99;
+  /* Make sure it does not overlap */
+  border: none;
+  /* Remove borders */
+  outline: none;
+  /* Remove outline */
+  background-color: #FF6584;
+  /* Set a background color */
+  color: white;
+  /* Text color */
+  cursor: pointer;
+  /* Add a mouse pointer on hover */
+  padding: 15px;
+  /* Some padding */
+  border-radius: 20px;
+  /* Rounded corners */
+  font-size: 18px;
+  /* Increase font size */
+  -webkit-box-shadow: rgba(0, 0, 0, 0.15) 3px 3px 2px;
+          box-shadow: rgba(0, 0, 0, 0.15) 3px 3px 2px;
+}
+
+body #myBtn:hover {
+  background-color: #6C63FF;
+  /* Add a dark-grey background on hover */
+}
+
+body .parallax {
+  /* The image used */
+  background-image: url("../images/blog-bg.jpg");
+  /* Set a specific height */
+  min-height: 500px;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+body .result {
+  margin: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+body .post-div {
+  padding: 1rem;
+  border-radius: 5px;
+  margin: 1rem;
+}
+
+body .post-h2 {
+  font-size: 1.5rem;
+  margin-bottom: .1rem;
+}
+
+body .post-h3, body .post-h32 {
+  font-size: 1.1rem;
+  font-weight: 200;
+  margin-bottom: .1rem;
+}
+
+body .post-p1 {
+  margin-top: 1rem;
+  font-size: 1rem;
+  font-weight: lighter;
+}
+
 ul {
   list-style-type: none;
   margin: 0;
@@ -258,9 +340,9 @@ section {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
