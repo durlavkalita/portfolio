@@ -41,52 +41,6 @@ body #myBtn:hover {
   /* Add a dark-grey background on hover */
 }
 
-body .parallax {
-  /* The image used */
-  background-image: url("../images/blog-bg.jpg");
-  /* Set a specific height */
-  min-height: 500px;
-  /* Create the parallax scrolling effect */
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-body .result {
-  margin: 1rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-body .post-div {
-  padding: 1rem;
-  border-radius: 5px;
-  margin: 1rem;
-}
-
-body .post-h2 {
-  font-size: 1.5rem;
-  margin-bottom: .1rem;
-}
-
-body .post-h3, body .post-h32 {
-  font-size: 1.1rem;
-  font-weight: 200;
-  margin-bottom: .1rem;
-}
-
-body .post-p1 {
-  margin-top: 1rem;
-  font-size: 1rem;
-  font-weight: lighter;
-}
-
 ul {
   list-style-type: none;
   margin: 0;
