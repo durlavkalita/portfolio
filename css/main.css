@@ -75,8 +75,9 @@ header {
 }
 
 header .logo {
-  color: #FF6584;
+  color: white;
   font-weight: bold;
+  font-size: large;
 }
 
 header ul {
@@ -95,7 +96,11 @@ header ul a {
   display: -ms-grid;
   display: grid;
   text-align: center;
-  padding: 4em;
+  padding: 1em;
+}
+
+.hero .content {
+  margin-bottom: 1em;
 }
 
 .hero .content h1 {
@@ -118,7 +123,7 @@ header ul a {
 }
 
 .hero .hero-image {
-  margin-top: 1em;
+  margin-top: 1.5em;
 }
 
 .hero p {
@@ -130,16 +135,16 @@ header ul a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   margin: 0 auto;
   width: 200px;
   font-weight: bold;
 }
 
 .meet a {
-  margin-top: .4em;
+  margin-top: 1.2em;
   margin-bottom: .5em;
   padding: .2em .4em;
   background-color: #6C63FF;
@@ -147,6 +152,7 @@ header ul a {
   border: none;
   border-radius: 5px;
   color: white;
+  margin-right: 1em;
 }
 
 .scroll {
@@ -317,6 +323,9 @@ section {
   .featured, .portfolio {
     text-align: left;
   }
+  .hero .hero-image {
+    padding: 0em 5em;
+  }
   .featured, .portfolio-container {
     display: -ms-grid;
     display: grid;
@@ -327,10 +336,6 @@ section {
     display: -ms-grid;
     display: grid;
     place-content: center;
-  }
-  .right {
-    margin-left: 2em;
-    margin-top: 1em;
   }
   .skills {
     margin-top: -5em;
@@ -393,15 +398,18 @@ section {
         -ms-flex-align: center;
             align-items: center;
     background: unset;
-    padding: 0;
+    padding: 0em;
   }
   .hero .content {
-    padding: 6em 8em 6em 4em;
+    padding: 1em 8em 6em 4em;
     text-align: left;
   }
   .hero .content h1 {
     font-size: 3em;
     line-height: 1.2em;
+  }
+  .hero .hero-image {
+    padding-right: 2em;
   }
   .meet {
     margin: unset;
@@ -428,9 +436,9 @@ section {
   .hero .content {
     padding: 6em 8em 6em 10em;
   }
-  .hero-image {
-    padding-top: 6em;
-    margin-right: 4em;
+  .hero .hero-image {
+    padding-right: 10em;
+    padding-top: 4em;
   }
 }
 
@@ -444,9 +452,9 @@ section {
   .hero .content {
     padding: 9em 20em 6em 20em;
   }
-  .hero-image {
+  .hero .hero-image {
     padding-top: 9em;
-    margin-right: 8em;
+    padding-right: 20em;
   }
 }
 
