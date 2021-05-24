@@ -113,7 +113,6 @@ header ul a {
 }
 
 .hero .content p {
-  font-style: italic;
   -webkit-animation-name: droppingp;
           animation-name: droppingp;
   -webkit-animation-duration: 6s;
@@ -261,8 +260,7 @@ section {
 .portfolio-container a img {
   border-radius: 1em;
   margin-bottom: 2em;
-  -webkit-box-shadow: rgba(0, 0, 0, 0.24) 0px 0.5em 0.2em;
-          box-shadow: rgba(0, 0, 0, 0.24) 0px 0.5em 0.2em;
+  border: solid 2px #ebc8e1;
 }
 
 .contact {

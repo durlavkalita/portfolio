@@ -86,7 +86,6 @@ header {
       animation-timing-function: ease-in-out;
     }
     p {
-      font-style: italic;
       animation-name: droppingp;
       animation-duration: 6s;
       animation-timing-function: ease-in-out;
@@ -226,7 +225,8 @@ section {
 .portfolio-container a img {
   border-radius: 1em;
   margin-bottom: 2em;
-  box-shadow: rgba(0, 0, 0, 0.24) 0px .5em .2em;
+  border: solid 2px rgb(235, 200, 225);
+  // box-shadow: rgba(0, 0, 0, 0.24) 0px .5em .2em;
 }
 
 .contact {
