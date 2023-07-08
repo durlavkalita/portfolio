@@ -1,172 +1,226 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio</title>
-  <link rel="stylesheet" href="css/main.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="css/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+      integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="nav-container">
+      <header>
+        <a href="#" class="logo">Portfolio</a>
+        <nav>
+          <ul>
+            <li><a href="#work">Work</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li>
+              <a href="https://durlavkalita.github.io/">Blog</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+    </div>
 
-  <div class="nav-container">
-    <header>
-      <a href="#" class="logo">DurlavK</a>
-      <nav>
+    <div class="hero">
+      <div class="content">
+        <h1>Hi! I am Durlav.</h1>
+        <p>Fullstack developer and chess enthusiast.</p>
+        <div class="meet">
+          <a href="#contact">Contact</a>
+          <a href="https://github.com/durlavkalita" target="_blank">Github</a>
+        </div>
+      </div>
+      <div class="hero-image">
+        <img src="images/hero-image.svg" alt="featured project" />
+      </div>
+    </div>
+
+    <section class="featured">
+      <div class="left">
+        <div class="inner transition2">
+          <p class="subtitle">Featured Project</p>
+          <a
+            href="https://github.com/durlavkalita/tweety"
+            target="_blank"
+            class="featured-title"
+            >Tweety</a
+          >
+          <p class="featured-desc">
+            A twitter clone made using laravel. Features include follwing users,
+            crud application on user tweets, like/dislike system.
+          </p>
+        </div>
+      </div>
+      <img
+        src="images/tweety.gif"
+        alt="featured project"
+        class="right transition2"
+      />
+    </section>
+
+    <section class="skills" id="skills">
+      <div class="skills-container">
         <ul>
-          <li><a href="#work">Work</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#contact">Contact</a></li>
-          <li><a href="https://awesome-khorana-181f4e.netlify.app/">Blog</a></li>
+          <li class="transition2">
+            <div class="icon-container three">
+              <i class="fab fa-laravel fa-4x"></i>
+            </div>
+            <p class="skill-title">Laravel</p>
+            <p class="featured-desc skill-desc">
+              With the most popular framework in github, building a server side
+              application is more fun than worry. From cms to e-commerce let me
+              route and wire the backend for you.
+            </p>
+          </li>
+          <li class="transition2">
+            <div class="icon-container one">
+              <i class="fab fa-node-js fa-4x"></i>
+            </div>
+            <p class="skill-title">Node js</p>
+            <p class="featured-desc skill-desc">
+              Node.js is designed to build scalable network applications. For
+              your medium or large projects node, express and it's scalibility
+              is what you need.
+            </p>
+          </li>
+          <li class="transition2">
+            <div class="icon-container two">
+              <i class="fab fa-vuejs fa-4x"></i>
+            </div>
+            <p class="skill-title">Vue js</p>
+            <p class="featured-desc skill-desc">
+              A modern javascript framework is a must need in SPA and web
+              development. With the power of vue3 and components let me simplify
+              this for you.
+            </p>
+          </li>
         </ul>
-      </nav>
-    </header>
-  </div>
-
-  <div class="hero">
-    <div class="content">
-      <h1>Elegent Web Experiences</h1>
-      <p>Be a part of something beautiful</p>
-      <div class="meet">
-        <a href="#contact">Contact</a>
-        <a href="https://github.com/durlavkalita" target="_blank">Project</a>
       </div>
-    </div>
-    <div class="hero-image">
-      <img src="images/hero-image.svg" alt="featured project">
-    </div>
-  </div>
+    </section>
 
-  <section class="featured">
-    <div class="left">
-      <div class="inner transition2">
-        <p class="subtitle">Featured Project</p>
-        <a href="https://github.com/durlavkalita/tweety" target="_blank" class="featured-title">Tweety</a>
-        <p class="featured-desc">A twitter clone made using laravel. Features include follwing users, crud application on user tweets, like/dislike system.</p>
-      </div>
-    </div>
-    <img src="images/tweety.gif" alt="featured project" class="right transition2">
-  </section>
-
-  <section class="skills" id="skills">
-    <div class="skills-container">
-      <ul>
-        <li class="transition2">
-          <div class="icon-container three">
-            <i class="fab fa-laravel fa-4x"></i>
+    <section class="portfolio" id="work">
+      <div class="portfolio-container transition3">
+        <div class="portfolio-left">
+          <div class="inner">
+            <p class="subtitle">Laravel App</p>
+            <p class="featured-title">Twitter-clone</p>
+            <p class="featured-desc">
+              A twitter clone made using laravel. Features include follwing
+              users, crud application on user tweets, like/dislike system.
+            </p>
           </div>
-          <p class="skill-title">Laravel</p>
-          <p class="featured-desc skill-desc">With the most popular framework in github, building a server side application is more fun than worry. From cms to e-commerce let me route and wire the backend for you.</p>
-        </li>
-        <li class="transition2">
-          <div class="icon-container one">
-            <i class="fab fa-node-js fa-4x"></i>
+        </div>
+        <a href="https://github.com/durlavkalita/tweety" target="_blank"
+          ><img src="images/tweety.gif" alt="Laravel App"
+        /></a>
+      </div>
+      <div class="portfolio-container transition3">
+        <div class="portfolio-left">
+          <div class="inner">
+            <p class="subtitle">Vue App</p>
+            <p class="featured-title">VueMovie</p>
+            <p class="featured-desc">
+              A movie and tv show databse built using vuejs and tailwind. The
+              data is collected from themoviedb api.
+            </p>
           </div>
-          <p class="skill-title">Node js</p>
-          <p class="featured-desc skill-desc">Node.js is designed to build scalable network applications. For your medium or large projects node, express and it's scalibility is what you need.</p>
-        </li>
-        <li class="transition2">
-          <div class="icon-container two">
-            <i class="fab fa-vuejs fa-4x"></i>
+        </div>
+        <a href="https://github.com/durlavkalita/vuemovie" target="_blank"
+          ><img src="images/vuemovie.png" alt="Vue App"
+        /></a>
+      </div>
+      <div class="portfolio-container transition3">
+        <div class="portfolio-left">
+          <div class="inner">
+            <p class="subtitle">React App</p>
+            <p class="featured-title">React Blog</p>
+            <p class="featured-desc">
+              A simple blog built using reactjs. The blog uses a REST api built
+              using nodejs and mongodb to collect relavant data.
+            </p>
           </div>
-          <p class="skill-title">Vue js</p>
-          <p class="featured-desc skill-desc">A modern javascript framework is a must need in SPA and web development. With the power of vue3 and components let me simplify this for you.</p>
-        </li>
-      </ul>
-    </div>
-  </section>
+        </div>
+        <a href="https://awesome-khorana-181f4e.netlify.app/" target="_blank"
+          ><img src="images/reactblog.png" alt="React Blog"
+        /></a>
+      </div>
+    </section>
 
-  <section class="portfolio" id="work">
-    <div class="portfolio-container transition3">
-      <div class="portfolio-left">
-        <div class="inner">
-          <p class="subtitle">Laravel App</p>
-          <p class="featured-title">Twitter-clone</p>
-          <p class="featured-desc">A twitter clone made using laravel. Features include follwing users, crud application on user tweets, like/dislike system.</p>
+    <section class="contact" id="contact">
+      <div class="contact-header">
+        <p>
+          Like what you see?
+          <a href="#contact" style="color: #ff6584">Let's talk</a>
+        </p>
+        <h1>Contact</h1>
+      </div>
+      <div class="contact-container">
+        <div class="contact-info">
+          <div>
+            <p><i class="fas fa-map-marker-alt"></i> Guwahati, Assam, IN</p>
+          </div>
+          <div>
+            <p><i class="fas fa-envelope"></i> durlavk98@gmail.com</p>
+          </div>
+          <div>
+            <p><i class="fas fa-phone-alt"></i> +91 70862 55583</p>
+          </div>
+          <div>
+            <p><i class="fab fa-linkedin-in"></i> @durlavkalita</p>
+          </div>
+          <div>
+            <p><i class="fab fa-twitter"></i> @durlavk98</p>
+          </div>
+        </div>
+        <div class="contact-image">
+          <img src="./images/contact-image.svg" alt="Contact-svg" />
         </div>
       </div>
-      <a href="https://github.com/durlavkalita/tweety" target="_blank"><img src="images/tweety.gif" alt="Laravel App"></a>
-    </div>
-    <div class="portfolio-container transition3">
-      <div class="portfolio-left">
-        <div class="inner">
-          <p class="subtitle">Vue App</p>
-          <p class="featured-title">VueMovie</p>
-          <p class="featured-desc">A movie and tv show databse built using vuejs and tailwind. The data is collected from themoviedb api.</p>
-        </div>
-      </div>
-      <a href="https://github.com/durlavkalita/vuemovie" target="_blank"><img src="images/vuemovie.png" alt="Vue App"></a>
-    </div>
-    <div class="portfolio-container transition3">
-      <div class="portfolio-left">
-        <div class="inner">
-          <p class="subtitle">React App</p>
-          <p class="featured-title">React Blog</p>
-          <p class="featured-desc">A simple blog built using reactjs. The blog uses a REST api built using nodejs and mongodb to collect relavant data.</p>
-        </div>
-      </div>
-      <a href="https://awesome-khorana-181f4e.netlify.app/" target="_blank"><img src="images/reactblog.png" alt="React Blog"></a>
-    </div>
-  </section>
+    </section>
 
-  <section class="contact" id="contact">
-    <div class="contact-header">
-      <p>Like what you see? <a href="#contact" style="color: #FF6584;">Let's talk</a></p>
-      <h1>Contact</h1>
+    <div class="footer-container">
+      <footer>
+        <nav>
+          <ul>
+            <li>
+              <a href="https://github.com/durlavkalita" target="_blank">
+                <i class="fab fa-github fa-2x"></i>
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.linkedin.com/in/durlavkalita/"
+                target="_blank"
+              >
+                <i class="fab fa-linkedin-in fa-2x"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://twitter.com/durlavk98" target="_blank">
+                <i class="fab fa-twitter fa-2x"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://durlavkalita.medium.com/" target="_blank">
+                <i class="fab fa-medium fa-2x"></i>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </footer>
     </div>
-    <div class="contact-container">
-      <div class="contact-info">
-        <div>
-          <p><i class="fas fa-map-marker-alt"></i>
-          New Guwahati, Assam, IN</p>
-        </div>
-        <div>
-          <p><i class="fas fa-envelope"></i>
-            durlavk98@gmail.com</p>
-        </div>
-        <div>
-          <p><i class="fas fa-phone-alt"></i>
-            +91 863 814 1196</p>
-        </div>
-        <div>
-          <p><i class="fab fa-linkedin-in"></i>
-          @durlavkalita</p>
-        </div>
-        <div>
-          <p><i class="fab fa-twitter"></i>
-          @durlavk98</p>
-        </div>
-      </div>
-      <div class="contact-image">
-        <img src="./images/contact-image.svg" alt="Contact-svg">
-      </div>
-    </div>
-  </section>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">
+      <i class="fas fa-arrow-up"></i>
+    </button>
 
-  <div class="footer-container">
-    <footer>
-      <nav>
-        <ul>
-          <li><a href="https://github.com/durlavkalita" target="_blank">
-            <i class="fab fa-github fa-2x"></i>
-          </a></li>
-          <li><a href="https://www.linkedin.com/in/durlavkalita/" target="_blank">
-            <i class="fab fa-linkedin-in fa-2x"></i>
-          </a></li>
-          <li><a href="https://twitter.com/durlavk98" target="_blank">
-            <i class="fab fa-twitter fa-2x"></i>
-          </a></li>
-          <li><a href="https://durlavkalita.medium.com/" target="_blank">
-            <i class="fab fa-medium fa-2x"></i>
-          </a></li>
-        </ul>
-      </nav>
-    </footer>
-  </div>
-  <button onclick="topFunction()" id="myBtn" title="Go to top">
-    <i class="fas fa-arrow-up"></i>
-  </button>
-
-  <script src="script.js"></script>
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>
